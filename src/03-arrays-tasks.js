@@ -579,6 +579,7 @@ function group(array, keySelector, valueSelector) {
 function selectMany(arr, childrenSelector) {
   return arr.reduce(
     (newArr, item) => newArr.concat(...childrenSelector(item)),
+    // eslint-disable-next-line
     []
   );
 }
